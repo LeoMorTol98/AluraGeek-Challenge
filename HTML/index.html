@@ -2,15 +2,87 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="*">
-    <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/flexboox.css">
-    <link rel="stylesheet" href="../CSS/styleIndex.css">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Permissions-Policy" content="*"/>
+    <link rel="stylesheet" href="../CSS/reset.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../CSS/flexboox.css"/>
+    <link rel="stylesheet" href="../CSS/styleIndex.css"/>
     <title>AluraGeek</title>
+    <link rel="shortcut icon"  href="../IMG/logo.png"/>
 </head>
+
+<body>
+    <!--Desarrollo del encabezado de la pagina AluraGeek-->
+    <header class="Header">
+        <img class="Imagen_Header" src="../IMG/corazones.jpg" alt="grupo de 3 corazones logo representativo de AluraGeek"/>
+        <p class="Titulo_Header">AluraGeek</p>
+    </header>
+    <!--Desarrollo del main o contenido de la pagina AluraGeek-->
+    <main class="Principal">
+        <!--Contenedor de la lista de productos-->
+        <div class="Contenedor_productos">
+            <ul class="lista_prodcutos"  data-Lista_Productos></ul>
+        </div>
+        <!--Contenedor del formulario y de los botones necesarios para incluir productos-->
+        <div class="Contenedor_formulario">
+            <p class="Titulo_formulario">AGREGAR</p>
+            <p class="Titulo_formulario">PRODUCTOS:</p> 
+            <fomr class="Formulario_productos" data-formulario>
+                <fieldset class="campo_formulario">
+                    <label class="campo_etiqueta" for="nombre">Nombre...</label>
+                    <input 
+                    name="nombre" 
+                    class="campo_completo" 
+                    minlength="4" 
+                    type="text" 
+                    required/>
+                    <span class="mensaje_error"></span>
+                </fieldset>
+                <fieldset class="campo_formulario">
+                    <label class="campo_etiqueta" for="precio">Precio...</label>
+                    <input
+                    name="precio"
+                    class="campo_completo"
+                    minlength="1"
+                    type="text"
+                    required/>
+                    <span class="mensaje_error"></span>
+                </fieldset>
+                <fieldset class="campo_formulario">
+                    <label class="campo_etiqueta" for="imagen">Imagen...</label>
+                    <input
+                    name="imagen"
+                    class="campo__completo"
+                    minlength="5"
+                    type="text"
+                    required/>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+                <div>
+                    <input
+                    value="Enviar"
+                    class="formulario_boton_enviar"
+                    data-boton-enviar 
+                    type="submit"/>
+                    <input
+                    value="Limpiar"
+                    class="formulario-boton-limpiar"
+                    data-boton-limpiar
+                    type="submit"/>    
+                </div>
+            </fomr>
+        </div>
+    </main>
+    <!--Desarrollo del pie de ágina para la pagina alluraGeek-->
+    <footer>
+        <img class="Imagen_Header" src="../IMG/corazones.jpg"/>
+        <p class="Titulo_Header">AluraGeek</p>
+        <p class="subtitulo_footer">Desarrollado por Leonardo Moreno</p>
+        <p class="subsubtitulo_footer">Alura LATAM 2024</p>
+    </footer>
+</body>
