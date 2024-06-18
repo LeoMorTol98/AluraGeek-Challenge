@@ -1,0 +1,16 @@
+.Header{
+    background: linear-gradient(#9303A6,#5D04D9,rgb(255,255,255));
+}
+.Imagen_Header{
+    width: 15%;
+    margin-left: 35%;
+}
+.Titulo_Header{
+    padding-top: 5px;
+    font-size: x-large;
+    margin-left: 5px;
+    color: aliceblue;
+}
+.Principal{
+    background: linear-gradient(rgb(255,255,255),#5D04D9);
+}

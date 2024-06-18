@@ -1,0 +1,23 @@
+.Header{
+    display: flex;
+    text-align: center;
+}
+.contenedor_header{
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+}
+.Principal{
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.Contenedor_productos,.Contenedor_formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+}

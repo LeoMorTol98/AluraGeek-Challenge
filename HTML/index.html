@@ -19,19 +19,23 @@
 <body>
     <!--Desarrollo del encabezado de la pagina AluraGeek-->
     <header class="Header">
-        <img class="Imagen_Header" src="../IMG/corazones.jpg" alt="grupo de 3 corazones logo representativo de AluraGeek"/>
+        <div class="contenedor_header">
+            <img class="Imagen_Header" src="../IMG/corazones.jpg" alt="grupo de 3 corazones logo representativo de AluraGeek"/>
         <p class="Titulo_Header">AluraGeek</p>
+        </div>
     </header>
     <!--Desarrollo del main o contenido de la pagina AluraGeek-->
     <main class="Principal">
         <!--Contenedor de la lista de productos-->
         <div class="Contenedor_productos">
-            <ul class="lista_prodcutos"  data-Lista_Productos></ul>
+            <p class="titulo_lista">MIS PRODUCTOS..</p>
+            <ul class="lista_prodcutos"  data-Lista_Productos>
+
+            </ul>
         </div>
         <!--Contenedor del formulario y de los botones necesarios para incluir productos-->
         <div class="Contenedor_formulario">
-            <p class="Titulo_formulario">AGREGAR</p>
-            <p class="Titulo_formulario">PRODUCTOS:</p> 
+            <p class="titulo_lista">AGREGAR PRODCUTOS:</p> 
             <fomr class="Formulario_productos" data-formulario>
                 <fieldset class="campo_formulario">
                     <label class="campo_etiqueta" for="nombre">Nombre...</label>
@@ -50,6 +54,7 @@
                     class="campo_completo"
                     minlength="1"
                     type="text"
+                    form="[0-9]{3-5}/"
                     required/>
                     <span class="mensaje_error"></span>
                 </fieldset>
