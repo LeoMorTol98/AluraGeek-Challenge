@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="Permissions-Policy" content="*"/>
     <link rel="stylesheet" href="../CSS/reset.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+    </style>
     <link rel="stylesheet" href="../CSS/flexboox.css"/>
     <link rel="stylesheet" href="../CSS/styleIndex.css"/>
     <title>AluraGeek</title>
@@ -30,12 +30,12 @@
         <div class="Contenedor_productos">
             <p class="titulo_lista">MIS PRODUCTOS..</p>
             <ul class="lista_prodcutos"  data-Lista_Productos>
-
+                <!--objeto_lista clase de cada objeto de la lista-->
             </ul>
         </div>
         <!--Contenedor del formulario y de los botones necesarios para incluir productos-->
         <div class="Contenedor_formulario">
-            <p class="titulo_lista">AGREGAR PRODCUTOS:</p> 
+            <p class="titulo_lista">AGREGAR<br>PRODUCTOS:</p> 
             <fomr class="Formulario_productos" data-formulario>
                 <fieldset class="campo_formulario">
                     <label class="campo_etiqueta" for="nombre">Nombre...</label>
@@ -54,7 +54,7 @@
                     class="campo_completo"
                     minlength="1"
                     type="text"
-                    form="[0-9]{3-5}/"
+                    pattern="[0-9]{3-5}/"
                     required/>
                     <span class="mensaje_error"></span>
                 </fieldset>
@@ -62,13 +62,13 @@
                     <label class="campo_etiqueta" for="imagen">Imagen...</label>
                     <input
                     name="imagen"
-                    class="campo__completo"
+                    class="campo_completo"
                     minlength="5"
                     type="text"
                     required/>
                     <span class="mensaje-error"></span>
                 </fieldset>
-                <div>
+                <div class="botones">
                     <input
                     value="Enviar"
                     class="formulario_boton_enviar"
@@ -85,8 +85,8 @@
     </main>
     <!--Desarrollo del pie de ágina para la pagina alluraGeek-->
     <footer>
-        <img class="Imagen_Header" src="../IMG/corazones.jpg"/>
-        <p class="Titulo_Header">AluraGeek</p>
+        <img class="Imagen_footer" src="../IMG/corazones.jpg"/>
+        <p class="Titulo_footer">AluraGeek</p>
         <p class="subtitulo_footer">Desarrollado por Leonardo Moreno</p>
         <p class="subsubtitulo_footer">Alura LATAM 2024</p>
     </footer>
