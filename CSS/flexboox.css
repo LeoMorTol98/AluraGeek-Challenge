@@ -14,12 +14,12 @@
     width: auto;
     padding: 2%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .Contenedor_productos,.Contenedor_formulario{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     justify-content: space-between;
 }
 .titulo_lista{
@@ -28,6 +28,28 @@
 .lista_prodcutos{
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
+}
+
+.objeto_lista{
+    display: flex;
+    width: 20%;
+}
+
+.contenedor_lista{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 8px;
+}
+
+.imagen_lista{
+    width: 100%;
+}
+
+.precio_eliminar{
+    display: flex;
+    justify-content: space-between;
 }
 .Formulario_productos{
     display: flex;

@@ -1,11 +1,13 @@
-.Header{
-    background: linear-gradient(#9303A6,#5D04D9,rgb(255,255,255));
+.Header {
+    background: linear-gradient(#9303A6, #5D04D9, rgb(255, 255, 255));
 }
-.Imagen_Header{
+
+.Imagen_Header {
     width: 15%;
     margin-left: 35%;
 }
-.Titulo_Header{
+
+.Titulo_Header {
     padding-top: 5px;
     font-size: x-large;
     margin-left: 5px;
@@ -14,46 +16,84 @@
     font-weight: 400;
     font-style: normal;
 }
-.Principal{
-    background: linear-gradient(rgb(255,255,255),#5D04D9);
+
+.Principal {
+    background: linear-gradient(rgb(255, 255, 255), #5D04D9);
 }
-.titulo_lista{
+
+.titulo_lista {
     font-family: "Tiny5", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: xx-large;
 }
-.campo_etiqueta{
+
+.objeto_lista{
+    background-color: #f704ff;
+    border-radius: 10px;
+}
+
+.nombre_lista{
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    font-size: large;
+    padding-top: 5px;
+}
+
+.precio_objeto_lista{
+    padding-top: 10px;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    font-size: large;
+    padding-top: 5px;
+}
+
+.boton_objeto_lista{
+    background-color: #9303A6;
+}
+
+.campo_etiqueta {
     font-family: "Tiny5", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: x-large;
 }
-.campo_completo{
-    width: 150%;
-    height: 20px;
+
+.campo_completo {
+    width: 80%;
+    height: 30px;
     border-radius: 10px;
     border-color: #8C0375;
     border-width: 3px;
 }
-.formulario_boton_enviar{
+
+.formulario_boton_enviar {
     width: 150px;
     height: 25px;
     background-color: #9303A6;
     color: aliceblue;
     border-radius: 5px;
 }
-.formulario-boton-limpiar{
+
+.formulario-boton-limpiar {
     width: 150px;
     height: 25px;
     background-color: aliceblue;
     color: #9303A6;
     border-radius: 5px;
 }
-footer{
-    background: linear-gradient(#5D04D9,#9303A6);
+
+footer {
+    background: linear-gradient(#5D04D9, #9303A6);
 }
-.Titulo_footer,.subtitulo_footer,.subsubtitulo_footer{
+
+.Titulo_footer,
+.subtitulo_footer,
+.subsubtitulo_footer {
     font-family: "Tiny5", sans-serif;
     font-weight: 400;
     font-style: normal;

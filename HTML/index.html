@@ -31,6 +31,72 @@
             <p class="titulo_lista">MIS PRODUCTOS..</p>
             <ul class="lista_prodcutos"  data-Lista_Productos>
                 <!--objeto_lista clase de cada objeto de la lista-->
+            
+                <li class="objeto_lista">
+                    <div class="contenedor_lista">
+                        <img class="imagen_lista" src="https://www.shutterstock.com/shutterstock/photos/203139937/display_1500/stock-photo-milan-italy-july-close-up-of-white-nintendo-wii-u-gamepad-device-nintendo-is-the-world-203139937.jpg"/>
+                        <p class="nombre_lista">Wiiu</p>
+                        <div class="precio_eliminar">
+                            <p class="precio_objeto_lista">$6000</p>
+                            <button class="boton_objeto_lista">
+                                <img src="../IMG/eliminar.png" />
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="objeto_lista">
+                    <div class="contenedor_lista">
+                        <img class="imagen_lista" src="https://www.shutterstock.com/shutterstock/photos/203139937/display_1500/stock-photo-milan-italy-july-close-up-of-white-nintendo-wii-u-gamepad-device-nintendo-is-the-world-203139937.jpg"/>
+                        <p class="nombre_lista">Wiiu</p>
+                        <div class="precio_eliminar">
+                            <p class="precio_objeto_lista">$6000</p>
+                            <button class="boton_objeto_lista">
+                                <img src="../IMG/eliminar.png" />
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="objeto_lista">
+                    <div class="contenedor_lista">
+                        <img class="imagen_lista" src="https://www.shutterstock.com/shutterstock/photos/203139937/display_1500/stock-photo-milan-italy-july-close-up-of-white-nintendo-wii-u-gamepad-device-nintendo-is-the-world-203139937.jpg"/>
+                        <p class="nombre_lista">Wiiu</p>
+                        <div class="precio_eliminar">
+                            <p class="precio_objeto_lista">$6000</p>
+                            <button class="boton_objeto_lista">
+                                <img src="../IMG/eliminar.png" />
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="objeto_lista">
+                    <div class="contenedor_lista">
+                        <img class="imagen_lista" src="https://www.shutterstock.com/shutterstock/photos/203139937/display_1500/stock-photo-milan-italy-july-close-up-of-white-nintendo-wii-u-gamepad-device-nintendo-is-the-world-203139937.jpg"/>
+                        <p class="nombre_lista">Wiiu</p>
+                        <div class="precio_eliminar">
+                            <p class="precio_objeto_lista">$6000</p>
+                            <button class="boton_objeto_lista">
+                                <img src="../IMG/eliminar.png" />
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="objeto_lista">
+                    <div class="contenedor_lista">
+                        <img class="imagen_lista" src="https://www.shutterstock.com/shutterstock/photos/203139937/display_1500/stock-photo-milan-italy-july-close-up-of-white-nintendo-wii-u-gamepad-device-nintendo-is-the-world-203139937.jpg"/>
+                        <p class="nombre_lista">Wiiu</p>
+                        <div class="precio_eliminar">
+                            <p class="precio_objeto_lista">$6000</p>
+                            <button class="boton_objeto_lista">
+                                <img src="../IMG/eliminar.png" />
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            
             </ul>
         </div>
         <!--Contenedor del formulario y de los botones necesarios para incluir productos-->
@@ -54,7 +120,7 @@
                     class="campo_completo"
                     minlength="1"
                     type="text"
-                    pattern="[0-9]{3-5}/"
+                    pattern="([0-9]{3,5})(.?)(,?)([0-9]{1,2}?)"
                     required/>
                     <span class="mensaje_error"></span>
                 </fieldset>
@@ -63,10 +129,10 @@
                     <input
                     name="imagen"
                     class="campo_completo"
-                    minlength="5"
+                    minlength="10"
                     type="text"
                     required/>
-                    <span class="mensaje-error"></span>
+                    <span class="mensaje_error"></span>
                 </fieldset>
                 <div class="botones">
                     <input
@@ -74,11 +140,8 @@
                     class="formulario_boton_enviar"
                     data-boton-enviar 
                     type="submit"/>
-                    <input
-                    value="Limpiar"
-                    class="formulario-boton-limpiar"
-                    data-boton-limpiar
-                    type="submit"/>    
+                    <button class="formulario-boton-limpiar"
+                    data-boton-limpiar>Limpiar</button>    
                 </div>
             </fomr>
         </div>
