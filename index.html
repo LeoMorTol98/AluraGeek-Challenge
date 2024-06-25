@@ -32,71 +32,6 @@
             <ul class="lista_prodcutos"  data-Lista_Productos>
                 <!--objeto_lista clase de cada objeto de la lista-->
             
-                <li class="objeto_lista">
-                    <div class="contenedor_lista">
-                        <img class="imagen_lista" src="https://www.shutterstock.com/shutterstock/photos/203139937/display_1500/stock-photo-milan-italy-july-close-up-of-white-nintendo-wii-u-gamepad-device-nintendo-is-the-world-203139937.jpg"/>
-                        <p class="nombre_lista">Wiiu</p>
-                        <div class="precio_eliminar">
-                            <p class="precio_objeto_lista">$6000</p>
-                            <button class="boton_objeto_lista">
-                                <img src="../IMG/eliminar.png" />
-                            </button>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="objeto_lista">
-                    <div class="contenedor_lista">
-                        <img class="imagen_lista" src="https://www.shutterstock.com/shutterstock/photos/203139937/display_1500/stock-photo-milan-italy-july-close-up-of-white-nintendo-wii-u-gamepad-device-nintendo-is-the-world-203139937.jpg"/>
-                        <p class="nombre_lista">Wiiu</p>
-                        <div class="precio_eliminar">
-                            <p class="precio_objeto_lista">$6000</p>
-                            <button class="boton_objeto_lista">
-                                <img src="../IMG/eliminar.png" />
-                            </button>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="objeto_lista">
-                    <div class="contenedor_lista">
-                        <img class="imagen_lista" src="https://www.shutterstock.com/shutterstock/photos/203139937/display_1500/stock-photo-milan-italy-july-close-up-of-white-nintendo-wii-u-gamepad-device-nintendo-is-the-world-203139937.jpg"/>
-                        <p class="nombre_lista">Wiiu</p>
-                        <div class="precio_eliminar">
-                            <p class="precio_objeto_lista">$6000</p>
-                            <button class="boton_objeto_lista">
-                                <img src="../IMG/eliminar.png" />
-                            </button>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="objeto_lista">
-                    <div class="contenedor_lista">
-                        <img class="imagen_lista" src="https://www.shutterstock.com/shutterstock/photos/203139937/display_1500/stock-photo-milan-italy-july-close-up-of-white-nintendo-wii-u-gamepad-device-nintendo-is-the-world-203139937.jpg"/>
-                        <p class="nombre_lista">Wiiu</p>
-                        <div class="precio_eliminar">
-                            <p class="precio_objeto_lista">$6000</p>
-                            <button class="boton_objeto_lista">
-                                <img src="../IMG/eliminar.png" />
-                            </button>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="objeto_lista">
-                    <div class="contenedor_lista">
-                        <img class="imagen_lista" src="https://www.shutterstock.com/shutterstock/photos/203139937/display_1500/stock-photo-milan-italy-july-close-up-of-white-nintendo-wii-u-gamepad-device-nintendo-is-the-world-203139937.jpg"/>
-                        <p class="nombre_lista">Wiiu</p>
-                        <div class="precio_eliminar">
-                            <p class="precio_objeto_lista">$6000</p>
-                            <button class="boton_objeto_lista">
-                                <img src="../IMG/eliminar.png" />
-                            </button>
-                        </div>
-                    </div>
-                </li>
-            
             </ul>
         </div>
         <!--Contenedor del formulario y de los botones necesarios para incluir productos-->
@@ -110,6 +45,7 @@
                     class="campo_completo" 
                     minlength="4" 
                     type="text" 
+                    data-nombre
                     required/>
                     <span class="mensaje_error"></span>
                 </fieldset>
@@ -121,6 +57,7 @@
                     minlength="1"
                     type="text"
                     pattern="([0-9]{3,5})(.?)(,?)([0-9]{1,2}?)"
+                    data-precio
                     required/>
                     <span class="mensaje_error"></span>
                 </fieldset>
@@ -131,6 +68,7 @@
                     class="campo_completo"
                     minlength="10"
                     type="text"
+                    data-imagen
                     required/>
                     <span class="mensaje_error"></span>
                 </fieldset>
@@ -153,4 +91,5 @@
         <p class="subtitulo_footer">Desarrollado por Leonardo Moreno</p>
         <p class="subsubtitulo_footer">Alura LATAM 2024</p>
     </footer>
+    <script src="./JS/mostrarObjetos.js" type="module"></script>
 </body>
