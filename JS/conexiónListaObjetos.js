@@ -14,12 +14,6 @@ export async function EliminarObjetoLista(id) {
         method:"DELETE",
         headers:{
             "Content-type":"application/json"
-        },
-        body:{
-            id,
-            nombre,
-            precio,
-            imagen
         }
     });
 

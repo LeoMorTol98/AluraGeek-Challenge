@@ -9,12 +9,11 @@ export const mensajes={
     },
     precio:{
         valueMissing:"El campo precio no puede estar vacio",
-        tooShort:"Ingresa minimo un precio de una cifra",
-        customError:"El precio ingresado no es valido",
-        patterMissmatch:"Ingresa un precio con el siguinete formato numero(3-5).numero(1-2)"
+        patternMissmatch:"Ingresa un precio de unicamente numeros y decimales",
+        customError:"El precio no es valido"
     },
     imagen:{
-        valueMissing:"El campo imagen no puede estar vcio",
-        tooShort:"Ingresa una URL de 10 o más caracteres"
+        valueMissing:"el campo URL no puede estar vacio",
+        tooShort:"ingresa una URL de mas de 10 caracteres"
     }
 }

@@ -1,9 +1,17 @@
 import { conexiónListaObjetos } from "./conexiónListaObjetos.js";
+import { mostrarListaObjetos } from "./mostrarObjetos.js";
 
-async function crearProducto(){
-    let nombre=document.querySelector("[data-nombre]");
-    let precio=document.querySelector("[data-precio]");
-    let imagen=document.querySelector("[data-imagen]");
 
-    
+export async function crearProducto(evento){
+    evento.preventDefault();
+    const nombre=document.querySelector("[data-nombre]").value;
+    const precio=document.querySelector("[data-precio]").value;
+    const imagen=document.querySelector("[data-imagen]").value;
+
+    try{
+        await conexiónListaObjetos.agregarObjetoLista(nombre,precio,imagen);
+    }catch(e){
+        alert(e);
+    }
+    mostrarListaObjetos();
 }

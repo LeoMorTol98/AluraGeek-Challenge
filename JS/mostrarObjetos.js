@@ -2,7 +2,7 @@ import { conexiónListaObjetos } from "./conexiónListaObjetos.js";
 
 const lista=document.querySelector("[data-Lista_Productos]");
 
-export default function crearListaObjetos(nombre,precio,imagen){
+export default function crearListaObjetos(nombre,precio,imagen,id){
     const objetoLista=document.createElement("li");
     objetoLista.className="objeto_lista";
 
@@ -15,14 +15,16 @@ export default function crearListaObjetos(nombre,precio,imagen){
                                         <img src="../IMG/eliminar.png" />
                                     </button>
                                 </div>
+                                <p class="id">${id}</p>
                             </div>`;
     return objetoLista;
 }
 
-async function mostrarListaObjetos(){
+export async function mostrarListaObjetos(){
     try{
+        lista.replaceChildren();
         const listaAPI=await conexiónListaObjetos.ListaObjetos();
-        listaAPI.forEach(element => lista.appendChild(crearListaObjetos(element.nombre,element.precio,element.imagen)));
+        listaAPI.forEach(element => lista.appendChild(crearListaObjetos(element.nombre,element.precio,element.imagen,element.id)));
     } catch{
         lista.innerHTML="<h2 class='titulo_lista'>Ha ocurrido un error con la conección <br> Verifica que el servidor este inicializado</h2>";
     }

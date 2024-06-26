@@ -37,7 +37,7 @@
         <!--Contenedor del formulario y de los botones necesarios para incluir productos-->
         <div class="Contenedor_formulario">
             <p class="titulo_lista">AGREGAR<br>PRODUCTOS:</p> 
-            <fomr class="Formulario_productos" data-formulario>
+            <form class="Formulario_productos" data-formulario>
                 <fieldset class="campo_formulario">
                     <label class="campo_etiqueta" for="nombre">Nombre...</label>
                     <input 
@@ -56,7 +56,6 @@
                     class="campo_completo"
                     minlength="1"
                     type="text"
-                    pattern="([0-9]{3,5})(.?)(,?)([0-9]{1,2}?)"
                     data-precio
                     required/>
                     <span class="mensaje_error"></span>
@@ -81,7 +80,7 @@
                     <button class="formulario-boton-limpiar"
                     data-boton-limpiar>Limpiar</button>    
                 </div>
-            </fomr>
+            </form>
         </div>
     </main>
     <!--Desarrollo del pie de ágina para la pagina alluraGeek-->
@@ -92,4 +91,5 @@
         <p class="subsubtitulo_footer">Alura LATAM 2024</p>
     </footer>
     <script src="./JS/mostrarObjetos.js" type="module"></script>
+    <script src="./JS/index.js" type="module"></script>
 </body>
